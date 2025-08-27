@@ -7,16 +7,23 @@
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&display=swap');
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Montserrat', sans-serif;
+        }
+        /* Custom blue color for the button */
+        .bg-custom-blue {
+            background-color: #38B6FF;
+        }
+        .hover\:bg-custom-blue-dark:hover {
+            background-color: #2a94d1; /* A slightly darker shade for the hover effect */
         }
     </style>
 </head>
-<body class="flex items-center justify-center min-h-screen p-6">
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-6">
 
-    <div class="bg-white p-8 rounded-2xl shadow-xl w-full max-w-xl border border-gray-300">
-        <h1 class="text-3xl font-bold text-center text-[#002b56] mb-6">
+    <div class="bg-white p-8 rounded-2xl shadow-xl w-full max-w-xl">
+        <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">
             Calculadora de Resistencia de Cajas de Cartón
         </h1>
         <p class="text-center text-gray-600 mb-8">
@@ -26,7 +33,7 @@
         <!-- Input fields for Length, Width, and Height in a grid -->
         <div class="grid grid-cols-3 gap-6">
             <div class="flex flex-col">
-                <label for="length-input" class="block text-[#002b56] font-semibold mb-2">
+                <label for="length-input" class="block text-gray-700 font-semibold mb-2">
                     Largo (cm)
                 </label>
                 <input
@@ -38,7 +45,7 @@
                 />
             </div>
             <div class="flex flex-col">
-                <label for="width-input" class="block text-[#002b56] font-semibold mb-2">
+                <label for="width-input" class="block text-gray-700 font-semibold mb-2">
                     Ancho (cm)
                 </label>
                 <input
@@ -50,7 +57,7 @@
                 />
             </div>
             <div class="flex flex-col">
-                <label for="height-input" class="block text-[#002b56] font-semibold mb-2">
+                <label for="height-input" class="block text-gray-700 font-semibold mb-2">
                     Alto (cm)
                 </label>
                 <input
@@ -66,7 +73,7 @@
         <!-- Dropdowns for Flute Type and ECT Value in a grid -->
         <div class="grid grid-cols-2 gap-6 mt-6">
             <div class="flex flex-col">
-                <label for="flute-select" class="block text-[#002b56] font-semibold mb-2">
+                <label for="flute-select" class="block text-gray-700 font-semibold mb-2">
                     Tipo de Flauta
                 </label>
                 <select
@@ -82,8 +89,8 @@
             </div>
 
             <div class="flex flex-col">
-                <label for="ect-select" class="block text-[#002b56] font-semibold mb-2">
-                    Resistencia
+                <label for="ect-select" class="block text-gray-700 font-semibold mb-2">
+                    Valor ECT (lb/in)
                 </label>
                 <select
                     id="ect-select"
@@ -105,13 +112,13 @@
         <div class="mt-8 flex justify-center space-x-4">
             <button
                 id="calculate-button"
-                class="w-full md:w-auto px-6 py-2 bg-[#38B6FF] text-white font-bold rounded-full shadow-lg hover:bg-blue-400 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 transition-transform transform hover:scale-105"
+                class="w-full md:w-auto px-8 py-3 bg-custom-blue text-white font-bold rounded-full shadow-lg hover:bg-custom-blue-dark focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 transition-transform transform hover:scale-105"
             >
                 Calcular
             </button>
             <button
                 id="reset-button"
-                class="w-full md:w-auto px-6 py-2 bg-gray-500 text-white font-bold rounded-full shadow-lg hover:bg-gray-600 focus:outline-none focus:ring-4 focus:ring-gray-400 focus:ring-opacity-50 transition-transform transform hover:scale-105"
+                class="w-full md:w-auto px-8 py-3 bg-gray-500 text-white font-bold rounded-full shadow-lg hover:bg-gray-600 focus:outline-none focus:ring-4 focus:ring-gray-400 focus:ring-opacity-50 transition-transform transform hover:scale-105"
             >
                 Reiniciar
             </button>
@@ -327,4 +334,3 @@
 
 </body>
 </html>
-
