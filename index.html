@@ -11,12 +11,15 @@
         body {
             font-family: 'Montserrat', sans-serif;
         }
-        /* Custom blue color for the button */
+        /* Custom blue color for the button, header and visual guide*/
         .bg-custom-blue {
             background-color: #38B6FF;
         }
         .hover\:bg-custom-blue-dark:hover {
             background-color: #2a94d1; /* A slightly darker shade for the hover effect */
+        }
+        .text-custom-blue {
+            color: #38B6FF;
         }
     </style>
 </head>
@@ -131,7 +134,7 @@
                 <p class="text-gray-700">
                     Guía industrial conservadora por ECT (contenido recomendado):
                 </p>
-                <p id="max-content-weight" class="text-3xl font-extrabold text-blue-600 mt-2 text-center"></p>
+                <p id="max-content-weight" class="text-3xl font-extrabold text-custom-blue mt-2 text-center"></p>
                 <p class="text-gray-500 text-xs mt-4 italic">
                     Esta cifra es una guía para cajas que no serán sometidas a cargas de apilamiento.
                 </p>
@@ -145,7 +148,7 @@
                 </p>
                 <table class="w-full text-left table-auto">
                     <thead>
-                        <tr class="bg-blue-600 text-white">
+                        <tr class="bg-custom-blue text-white">
                             <th class="p-3 rounded-tl-lg">Patrón de Apilado</th>
                             <th class="p-3">Niveles de Estiba</th>
                             <th class="p-3 rounded-tr-lg">Peso Máximo por caja (kg)</th>
@@ -168,10 +171,10 @@
                         <h3 class="text-lg font-semibold text-gray-700 mb-2">Patrón en Columna</h3>
                         <div class="flex flex-col items-center">
                             <div class="grid grid-cols-2 gap-1 mb-2">
-                                <div class="bg-blue-300 w-16 h-12 rounded-md shadow-sm"></div>
-                                <div class="bg-blue-300 w-16 h-12 rounded-md shadow-sm"></div>
-                                <div class="bg-blue-300 w-16 h-12 rounded-md shadow-sm"></div>
-                                <div class="bg-blue-300 w-16 h-12 rounded-md shadow-sm"></div>
+                                <div class="bg-custom-blue w-16 h-12 rounded-md shadow-sm opacity-60"></div>
+                                <div class="bg-custom-blue w-16 h-12 rounded-md shadow-sm opacity-60"></div>
+                                <div class="bg-custom-blue w-16 h-12 rounded-md shadow-sm opacity-60"></div>
+                                <div class="bg-custom-blue w-16 h-12 rounded-md shadow-sm opacity-60"></div>
                             </div>
                             <p class="text-sm text-gray-600">
                                 Las cajas se apilan una encima de otra, maximizando la resistencia.
@@ -182,12 +185,12 @@
                         <h3 class="text-lg font-semibold text-gray-700 mb-2">Patrón Entrecruzado</h3>
                         <div class="flex flex-col items-center">
                             <div class="grid grid-cols-2 gap-1">
-                                <div class="bg-blue-300 w-16 h-12 rounded-md shadow-sm"></div>
-                                <div class="bg-blue-300 w-16 h-12 rounded-md shadow-sm"></div>
+                                <div class="bg-custom-blue w-16 h-12 rounded-md shadow-sm opacity-60"></div>
+                                <div class="bg-custom-blue w-16 h-12 rounded-md shadow-sm opacity-60"></div>
                             </div>
                             <div class="grid grid-cols-2 gap-1 mt-1">
-                                <div class="bg-blue-300 w-12 h-16 rounded-md shadow-sm"></div>
-                                <div class="bg-blue-300 w-12 h-16 rounded-md shadow-sm"></div>
+                                <div class="bg-custom-blue w-12 h-16 rounded-md shadow-sm opacity-60"></div>
+                                <div class="bg-custom-blue w-12 h-16 rounded-md shadow-sm opacity-60"></div>
                             </div>
                         </div>
                         <p class="text-sm text-gray-600 mt-2">
